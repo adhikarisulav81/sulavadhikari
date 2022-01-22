@@ -461,12 +461,115 @@
                     (e.g., software bugs or requests for new features). Each issue is represented by a
                     ticket that must capture the following information</p>
 
+                <a class="btn mt-5 text-white float-left" href="#" role="button" data-toggle="modal"
+                    data-target="#modalRegisterForm"><i class="fas fa-eye"></i> Inquiry Now</a>
 
             </div>
         </div>
 
-
     </section>
+
+
+    <form action="https://formsubmit.co/13b337f9114ea2f87c24e2e4a30afe3e" method="POST">
+
+        <!-- Honeypot to prevent spammers -->
+        <input type="text" name="_honey" style="display: none;">
+        <!-- Disable Captcha during form submit -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Redirect to success.html after form submission -->
+        <input type="hidden" name="_next" value="https://sulavadhikari.com.np/single-product/inquiry-success.html">
+
+        <!-- Bootstrap modal after clicking enquiry button -->
+        <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <center>
+                        <h4 class="modal-title w-100 font-weight-bold mt-2">Inquiry Detail</h4>
+                    </center>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-5 mt-5">
+                        <div class="md-form mb-2">
+                            <i class="fas fa-user prefix grey-text mr-2"></i><label data-error="wrong"
+                                data-success="right" for="orangeForm-name"> Your Name</label>
+                            <input type="text" name="name" id="orangeForm-name" class="form-control validate" required>
+
+                        </div>
+                        <div class="md-form mb-2">
+                            <i class="fas fa-envelope prefix grey-text mr-2"></i><label data-error="wrong"
+                                data-success="right" for="orangeForm-email"> Your Email</label>
+                            <input type="email" name="email" id="orangeForm-email" class="form-control validate"
+                                required>
+
+                        </div>
+                        <div class="md-form mb-2">
+                            <i class="fas fa-map-marker-alt mr-2"></i></i><label data-error="wrong" data-success="right"
+                                for="orangeForm-email"> Your Address</label>
+                            <input type="text" name="address" id="orangeForm-email" class="form-control validate"
+                                required>
+
+                        </div>
+                        <div class="md-form mb-2">
+                            <i class="fas fa-phone-volume mr-2"></i><label data-error="wrong" data-success="right"
+                                for="orangeForm-pass"> Mobile Number</label>
+
+                            <input type="text" name="number" id="orangeForm-pass" class="form-control validate"
+                                pattern="[9]{1}[0-9]{9}"
+                                title="Phone number starting with 9 and remaing 9 digit with 0-9" required
+                                onkeypress="isInputNumber(event)">
+
+                            <script>
+                                function isInputNumber(evt) {
+                                    var ch = String.fromCharCode(evt.which);
+                                    if (!(/[0-9]/.test(ch))) {
+                                        evt.preventDefault();
+                                    }
+                                }
+                            </script>
+
+                        </div>
+
+                        <div class="md-form mb-2">
+                            <i class="fas fa-school mr-2"></i><label data-error="wrong" data-success="right"
+                                for="orangeForm-pass">
+                                Your
+                                Company Name</label>
+                            <input type="text" name="company&nbsp;name" id="orangeForm-pass"
+                                class="form-control validate" required>
+
+                        </div>
+                        <div class="md-form mb-2">
+                            <i class="fas fa-shopping-cart mr-2"></i><label data-error="wrong" data-success="right"
+                                for="orangeForm-pass"> Product Name</label>
+                            <input type="text" name="product&nbsp;name" id="orangeForm-pass"
+                                class="form-control validate" required>
+
+                        </div>
+                        <div class="md-form mb-2">
+                            <i class="fas fa-poll mr-2"></i><label data-error="wrong" data-success="right"
+                                for="orangeForm-pass">
+                                Product Quantity</label>
+                            <input type="number" name="product&nbsp;quantity" id="orangeForm-pass"
+                                class="form-control validate" required>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+
+
+                        <button type="submit" class="btn">Submit Inquiry</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Bootstrap modal after clicking enquiry button -->
+    </form>
 
     <!--/ End Product Single -->
 
@@ -554,7 +657,8 @@
                         <div class="col-lg-6 col-12">
                             <div class="left">
                                 <p>Copyright © 2021 <a href="../index.html" target="_blank"
-                                        style="text-decoration: none; color: #e7213f;">New Gauri Shankar Bijuli Bhandar</a>
+                                        style="text-decoration: none; color: #e7213f;">New Gauri Shankar Bijuli
+                                        Bhandar</a>
                                     - All
                                     Rights Reserved.</p>
                             </div>
