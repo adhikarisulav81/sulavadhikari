@@ -176,7 +176,7 @@
 	background:var(--primary-color);
 }
 #scrollUp {
-	left: 10px;
+	left: 10px !important;
 	z-index: 33;
 	bottom: 10px;
 	text-align: center;
