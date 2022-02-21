@@ -1,596 +1,1019 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="SUlav Adhikari's Portfolio">
+    <title>Sulav Adhikari | Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- FontAwesome CSS -->
-  <link rel="stylesheet" href="css/fontawesome.all.min.css">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
-  <!-- Linking AOS Library -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  <title>PortFolio</title>
+    <!--Google Font link-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-collapse">
 
-  <!-- Begin Navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <i class="fas fa-portrait" style="width: 60px; height: 40px;"></i>
-      <a class="navbar-brand" href="#" title="My Portfolio"> &lt; Sulav Adhikari /&gt;</a>
-      <button class="navbar-toggler" style="outline: none; margin: none;" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation" title="Menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#" title="Home"><i class="fas fa-home"></i> Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#about" title="Know Me"><i class="fas fa-address-card"></i> About</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#project" title="My Projects"><i class="fas fa-tasks"></i> Task</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#blog" title="My Blogs"><i class="fas fa-blog"></i> Blog</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#gallery" title="My Gallery"><i class="fas fa-photo-video"></i> Gallery</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#coursework" title="My Coursework"><i class="fab fa-leanpub"></i> Coursework</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#contact" title="Contact Me"><i class="fas fa-user-tie"></i> Contact</a>
-          </li>
-        </ul>
-        <!-- Begin of Button for changing the mode of a webpage -->
-        <a class="mode btn btn-secondary" onclick="myFunction()" role="button" title="Change Mode"><i
-            class="fas fa-moon"></i></a>
-        <!-- End of Button for changing the mode of a webpage -->
-      </div>
+    <!-- Preloader -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+            </div>
+        </div>
     </div>
-  </nav>
-  <!-- End Navigation bar -->
+    <!--End off Preloader -->
 
-  <!-- Begin Video Carousel -->
-  <section class="video-carousel">
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <video class="video-fluid" style="opacity: 0.3;" autoplay loop muted>
-            <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
-            <!-- another video src: https://mdbootstrap.com/img/video/Tropical.mp4 -->
-          </video>
-          <div class="carousel-caption">
-            <h5>Hello World !!!</h5>
-            <p>Welcome To My PortFolio Website</p>
-            <div class="button">
-              <a class="btn btn-dark" id="btn1" href="./cv/Sulav Adhikari.pdf" role="button" title="View My CV"><i
-                  class="fas fa-address-card"></i> Glance My CV</a>
-              <a class="btn btn-dark" id="btn2" href="#" role="button" onclick="clicked()"
-                title="Print My Website Template"><i class="fas fa-print"></i> Print Template</a>
+
+    <div class="culmn">
+        <!--Home page style-->
+
+        <nav class="navbar navbar-default bootsnav navbar-fixed">
+            <div class="navbar-top bg-grey fix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="navbar-callus text-left sm-text-center">
+                                <ul class="list-inline">
+                                    <li><a href=""><i class="fa fa-phone"></i> +977-9812458078</a></li>
+                                    <li><a href=""><i class="fa fa-envelope-o"></i>
+                                            info@sulavadhikari.com.np</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="navbar-socail text-right sm-text-center">
+                                <ul class="list-inline">
+                                    <li><a target="_blank" href="https://www.facebook.com/Sulav.adhikari.140"
+                                            title="Join With Sulav Adhikari on Facebook"><i
+                                                class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a target="_blank" href="https://www.linkedin.com/in/programsulav/"
+                                            title="Connect with Sulav Adhikari on LinkedIn"><i
+                                                class="fa fa-linkedin"></i></a></li>
+                                    <li><a target="_blank" href="mailto:info@sulavadhikari.com.np"
+                                            title="Send Email to info@sulavadhikari.com.np"><i
+                                                class="fa fa-envelope"></i></a></li>
+                                    <li><a target="_blank" href="https://github.com/adhikarisulav81"
+                                            title="Join With adhikarisulav81 on GitHub"><i class="fa fa-github"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <video class="video-fluid" style="opacity: 0.3;" autoplay loop muted>
-            <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" type=" video/mp4" />
-            <!-- https://mdbootstrap.com/img/video/forest.mp4 -->
-          </video>
-          <div class="carousel-caption">
-            <h5>Know Me Better !!!</h5>
-            <p> A Front End Developer</p>
-            <div class="button">
-              <a class="btn btn-dark" id="btn1" href="./cv/Sulav Adhikari.pdf" role="button" title="Glance My CV"><i
-                  class="fas fa-address-card"></i> Glance My CV</a>
-              <a class="btn btn-dark" id="btn2" href="#" role="button" onclick="clicked()"
-                title="Print My Website Template"><i class="fas fa-print"></i> Print Template</a>
+
+            <!-- Start Top Search -->
+            <!-- <div class="top-search">
+                <div class="container">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+            </div> -->
+            <!-- End Top Search -->
+
+
+
+            <div class="container">
+                <!-- <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div> -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#brand">
+                        <a class="navbar-brand" href=""
+                            style="font-size: 32px; color:#13A0B2;"><strong>SULAV</strong></a>
+                        <!-- <img src="assets/images/logo.png" class="logo" alt=""> -->
+                        <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
+                    </a>
+
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- navbar menu -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                </div><!-- /.navbar-collapse -->
             </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <video class="video-fluid" style="opacity: 0.3;" autoplay loop muted>
-            <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
-            <!-- https://mdbootstrap.com/img/video/Agua-natural.mp4 -->
-          </video>
-          <div class="carousel-caption">
-            <h5>Thank You !!!</h5>
-            <p>Hope To See You Soon</p>
-            <div class="button">
-              <a class="btn btn-dark" id="btn1" href="./cv/Sulav Adhikari.pdf" role="button" title="Glance My CV"><i
-                  class="fas fa-address-card"></i> Glance My CV</a>
-              <a class="btn btn-dark" id="btn2" href="#" role="button" onclick="clicked()"
-                title="Print My Website Template"><i class="fas fa-print"></i> Print Template</a>
+
+        </nav>
+
+        <!--Home Sections-->
+
+        <section id="home" class="home bg-black fix">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="main_home text-center">
+                        <div class="col-md-12">
+                            <div class="hello_slid">
+                                <div class="slid_item">
+                                    <div class="home_text ">
+                                        <h2 class="text-white">Hello
+                                            <strong>World</strong>
+                                        </h2>
+                                        <h1 class="text-white">Welcome To My PortFolio Website</h1>
+                                        <!-- <h3 class="text-white">- We Create a <strong>Concept</strong> into The Market -
+                                        </h3> -->
+                                    </div>
+
+                                    <div class="home_btns m-top-40">
+                                        <a href="./cv/Sulav Adhikari.pdf" target="_blank"
+                                            class="home-btn btn-primary m-top-20">Glance My
+                                            CV</a>
+                                        <a href="#skill" class="home-btn btn-default m-top-20">Website Tour</a>
+                                    </div>
+                                </div><!-- End off slid item -->
+                                <div class="slid_item">
+                                    <div class="home_text ">
+                                        <h2 class="text-white">Know Me
+                                            <strong>Better</strong>
+                                        </h2>
+                                        <h1 class="text-white">Front End Developer & Creative Content Writer</h1>
+                                        <!-- <h3 class="text-white">- We Create a <strong>Concept</strong> into The Market -
+                                        </h3> -->
+                                    </div>
+
+                                    <div class="home_btns m-top-40">
+                                        <a href="./cv/Sulav Adhikari.pdf" target="_blank"
+                                            class="home-btn btn-primary m-top-20">Glance My
+                                            CV</a>
+                                        <a href="#skill" class="home-btn btn-default m-top-20">Website Tour</a>
+                                    </div>
+                                </div><!-- End off slid item -->
+                                <div class="slid_item">
+                                    <div class="home_text ">
+                                        <h2 class="text-white">Thank
+                                            <strong>You</strong>
+                                        </h2>
+                                        <h1 class="text-white">Hope To See You Soon</h1>
+                                        <!-- <h3 class="text-white">- We Create a <strong>Concept</strong> into The Market -
+                                        </h3> -->
+                                    </div>
+
+                                    <div class="home_btns m-top-40">
+                                        <a href="./cv/Sulav Adhikari.pdf" target="_blank"
+                                            class="home-btn btn-primary m-top-20">Glance My
+                                            CV</a>
+                                        <a href="#skill" class="home-btn btn-default m-top-20">Website Tour</a>
+                                    </div>
+                                </div><!-- End off slid item -->
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!--End off row-->
             </div>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" title="Previous" role="button"
-        data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" title="Next" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+            <!--End off container -->
+        </section>
+        <!--End off Home Sections-->
+
+
+
+        <!--Featured Section-->
+        <section id="skill" class="features">
+            <div class="container">
+                <div class="skill-title sm-m-top-50" style="margin-top: 35px;">
+                    <h2 class="text-uppercase text-center"><strong>My</strong> Skills</h2>
+                </div>
+                <style>
+                    .skill-title h2 {
+                        font-size: 36px;
+                        font-weight: 800;
+                    }
+                </style>
+                <div class="row">
+                    <div class="main_features fix roomy-70">
+                        <div class="col-md-4">
+
+                            <div class="features_item sm-m-top-30">
+                                <div class="f_item_icon">
+                                    <i class="fa fa-thumbs-o-up"></i>
+                                </div>
+                                <div class="f_item_text">
+                                    <h3>Web Developer</h3>
+                                    <p>As being a Web Developer, I am responsible for designing and
+                                        construction of websites. I need to ensure that sites meet user's expectations
+                                        by
+                                        ensuring they look good, run smoothly and offer easy access points with no
+                                        loading issues between pages or error messages.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="features_item sm-m-top-30">
+                                <div class="f_item_icon">
+                                    <i class="fa fa-tablet"></i>
+                                </div>
+                                <div class="f_item_text">
+                                    <h3>Frontend Developer</h3>
+                                    <p>As being a Front End Developer, my main goal is to combine technology and design
+                                        to
+                                        create
+                                        inviting, easy-to-use websites for consumers. I need to work closely with other
+                                        Web
+                                        Developers and IT professionals to design and troubleshoot unique software and
+                                        web applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="features_item sm-m-top-30">
+                                <div class="f_item_icon">
+                                    <i class="fa fa-sliders"></i>
+                                </div>
+                                <div class="f_item_text">
+                                    <h3>Blogger & Content Writer</h3>
+                                    <p>As being a Content Writer, I am responsible for using the written word
+                                        to share information about a client’s products, services or industry. Their
+                                        duties include preparing document outlines, updating content based on client
+                                        edit requests and proofreading their work for tone, style, clarity, grammar and
+                                        formatting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End off row -->
+            </div><!-- End off container -->
+        </section><!-- End off Featured Section-->
+
+
+        <!--Business Section-->
+        <section id="about" class="business bg-grey roomy-70">
+            <div class="container">
+                <div class="row">
+                    <div class="main_business">
+
+
+                        <div class="col-md-6">
+                            <div class="business_item sm-m-top-50">
+                                <h2 class="text-uppercase"><strong>About</strong> Sulav Adhikari</h2>
+                                <!-- <ul>
+                                    <li><i class="fa fa-arrow-circle-right"></i> Clean & Modern Design</li>
+                                    <li><i class="fa  fa-arrow-circle-right"></i> Fully Responsive</li>
+                                    <li><i class="fa  fa-arrow-circle-right"></i> Google Fonts</li>
+                                </ul> -->
+                                <p class="m-top-20">I am Sulav Adhikari, an adaptable college student (BSc.IT in
+                                    Computing) currently attending at Islington College. Throughout my academic career,
+                                    I
+                                    have been consistently praised as a diligent student by my teachers and peers. While
+                                    working
+                                    on academic and extracurricular projects, I have developed proven teamwork,
+                                    technical and research skills, which I hope to leverage into the Frontend developer
+                                    role in future.</p>
+
+                                <div class="business_btn">
+                                    <!-- <a href="https://bootstrapthemes.co" class="btn btn-default m-top-20">Read More</a> -->
+                                    <a href="#portfolio" class="all-blog-btn btn-primary m-top-20">My Projects</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="business_slid">
+                                <div class="slid_shap bg-grey"></div>
+                                <div class="business_items text-center">
+                                    <div class="business_item">
+                                        <div class="business_img">
+                                            <img src="assets/images/person3.jpg" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="business_item">
+                                        <div class="business_img">
+                                            <img src="assets/images/person1.jpg" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="business_item">
+                                        <div class="business_img">
+                                            <img src="assets/images/person3.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End off Business section -->
+
+
+
+        <!-- start blog section -->
+        <section id="blog" class="product">
+            <div class="container">
+                <div class="main_product roomy-80">
+                    <div class="head_title text-center fix">
+                        <h2 class="text-uppercase">Blog</h2>
+                        <h5>Some of my recent blogs</h5>
+                    </div>
+
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!-- <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol> -->
+
+                        <!-- Wrapper for slides -->
+                        <!-- <div class="carousel-inner" role="listbox"> -->
+                        <div class="item active">
+                            <div class="container">
+                                <div class="row" style="margin-bottom: 25px;">
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img1.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img1.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h4><strong>Elizabeth's Theranos Scandal</strong></h4>
+                                                <h6>If you wanna learn and get
+                                                    knowledge about theranos scandal then...</h6>
+                                                <a target="_blank"
+                                                    href="https://writetechblog.blogspot.com/2021/12/theranos.html"
+                                                    class="btn btn-default m-top-20">Read More...
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img2.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img2.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h4><strong>How to Write a Killer Company Profile</strong></h4>
+                                                <h6>Some of the common and popular ways to write a killer company
+                                                    profile are...
+                                                </h6>
+                                                <a target="_blank"
+                                                    href="https://medium.com/@adhikarisulav2021/how-to-write-a-killer-company-profile-25da85a28111"
+                                                    class="btn btn-default m-top-20">Read More...
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img3.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img3.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h4><strong>Artificial Intelligence (AI) & Machine Learning</strong>
+                                                </h4>
+                                                <h6>Learn and achieve knowledge regarding the AI and...</h6>
+                                                <a target="_blank"
+                                                    href="https://writetechblog.blogspot.com/2021/06/artificial-intelligence-machine.html"
+                                                    class="btn btn-default m-top-20">Read More...
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img4.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img4.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h4><strong>Internet & Cyber Security Attacks</strong></h4>
+                                                <h6>In this blog we will cover on the various types of
+                                                    security attacks, and...</h6>
+                                                <a target="_blank"
+                                                    href="https://writetechblog.blogspot.com/2021/06/internet-security-attacks-and-arp.html"
+                                                    class="btn btn-default m-top-20">Read More...
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <center>
+                                    <a target="_blank" href="https://writetechblog.blogspot.com/"
+                                        class="all-blog-btn btn-default m-top-20">View All Blogs
+                                    </a>
+                                </center>
+
+                                <style>
+                                    .home-btn,
+                                    .all-blog-btn {
+                                        position: relative;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        color: #fff;
+                                        background: #333;
+                                        display: inline-block;
+                                        -webkit-transition: all 0.4s ease;
+                                        -moz-transition: all 0.4s ease;
+                                        transition: all 0.4s ease;
+                                        z-index: 5;
+                                        display: inline-block;
+                                        padding: 12px 38px;
+                                        border-radius: 0px;
+                                    }
+
+                                    .all-blog-btn:hover {
+                                        color: #fff;
+                                        background: #00a885;
+                                    }
+                                </style>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- End off row -->
+            </div><!-- End off container -->
+        </section>
+        <!--end blog section-->
+
+
+        <!--Brand Section-->
+        <section id="brand" class="brand fix roomy-80">
+            <div class="container">
+                <div class="head_title text-center fix">
+                    <h2 class="text-uppercase">Tools & Technologies</h2>
+                    <h5>Some of my recent projects</h5>
+                </div>
+                <div class="row" style="margin-bottom: 50px;">
+                    <div class="main_brand text-center">
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/adobe.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/asana.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/bootstrap.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/css.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/github.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/html.svg" alt="" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="main_brand text-center">
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/jquery.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/js.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/react.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/vscode.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/blogger.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="brand_item sm-m-top-20">
+                                <img src="assets/images/tools/medium.svg" alt="" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End off Brand section -->
+
+
+        <!--start portfolio section-->
+        <section id="portfolio" class="product">
+            <div class="container">
+                <div class="main_product roomy-80">
+                    <div class="head_title text-center fix">
+                        <h2 class="text-uppercase">PortFolio</h2>
+                        <h5>Some of my recent projects</h5>
+                    </div>
+
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!-- <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol> -->
+
+                        <!-- Wrapper for slides -->
+                        <!-- <div class="carousel-inner" role="listbox"> -->
+                        <div class="item active">
+                            <div class="container">
+                                <div class="row" style="margin-bottom: 25px;">
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img1.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img1.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h5>SH Furniture</h5>
+                                                <h6>Website Frontend Designing</h6>
+                                                <a target="_blank" href="https://shf.itnepalsolutions.com/"
+                                                    class="btn btn-default m-top-20">Take a Look
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img2.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img2.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h5>Blood Donation</h5>
+                                                <h6>Website Frontend Designing</h6>
+                                                <a target="_blank"
+                                                    href="https://adhikarisulav81.github.io/blooddonations/"
+                                                    class="btn btn-default m-top-20">Take a
+                                                    Look
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img3.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img3.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h5>IT Nepal Solutions</h5>
+                                                <h6>Website Frontend Designing</h6>
+                                                <a target="_blank" href="https://itnepalsolutions.com/"
+                                                    class="btn btn-default m-top-20">Take a Look
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img4.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img4.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h5>GYM Management System</h5>
+                                                <h6>Website Frontend Designing</h6>
+                                                <a target="_blank"
+                                                    href="https://adhikarisulav81.github.io/gym-frontend-design/"
+                                                    class="btn btn-default m-top-20">Take a
+                                                    Look
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img1.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img1.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h5>Hotel Management System</h5>
+                                                <h6>Website Frontend Designing</h6>
+                                                <a target="_blank" href="https://hms.itnepalsolutions.com/"
+                                                    class="btn btn-default m-top-20">Take a Look
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img2.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img2.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h5>New Gauri Shankar Bijuli Bhandar</h5>
+                                                <h6>Website Frontend Designing</h6>
+                                                <a target="_blank" href="https://newgaurishankar.com.np/"
+                                                    class="btn btn-default m-top-20">Take a Look
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img3.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img3.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h5>IT Sathi</h5>
+                                                <h6>Website Frontend Designing</h6>
+                                                <a target="_blank" href="#skill" class="btn btn-default m-top-20">Take a
+                                                    Look
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="port_item xs-m-top-30">
+                                            <div class="port_img">
+                                                <img src="assets/images/work-img4.jpg" alt="" />
+                                                <div class="port_overlay text-center">
+                                                    <a href="assets/images/work-img4.jpg" class="popup-img">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="port_caption m-top-20">
+                                                <h5>School Management System</h5>
+                                                <h6>Website Frontend Designing</h6>
+                                                <a target="_blank" href="#skill" class="btn btn-default m-top-20">Take a
+                                                    Look
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <center>
+                            <a href="./cv/Sulav Adhikari.pdf" target="_blank" class="btn btn-primary m-top-20">View
+                                All
+                                Blogs</a>
+                        </center> -->
+
+                        <!-- </div> -->
+
+                        <!-- Controls -->
+                        <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                            data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                            data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a> -->
+                    </div>
+                </div><!-- End off row -->
+            </div><!-- End off container -->
+        </section>
+        <!-- End of portfolio section -->
+
+
+
+
+        <!-- Start Contact -->
+        <section id="contact" class="contact-us section">
+            <div class="container">
+                <div class="contact-head">
+                    <div class="row">
+                        <div class="col-lg-12 col-12">
+                            <div class="form-main">
+                                <div class="title">
+                                    <h2><b>Any Queries ?</b></h2>
+                                </div>
+                                <!-- <form class="form" action="https://formsubmit.co/6d264822cfd08ac350ac44309a3fd191"
+                                    method="POST"> -->
+                                <form class="form" action="#" method="POST">
+                                    <!-- Honeypot to prevent spammers -->
+                                    <!-- <input type="text" name="_honey" style="display: none;"> -->
+                                    <!-- Disable Captcha during form submit -->
+                                    <!-- <input type="hidden" name="_captcha" value="false"> -->
+                                    <!-- Redirect to success.html after form submission -->
+                                    <input type="hidden" name="_next"
+                                        value="https://newgaurishankar.com.np/contact-success.html">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label><i class="fa fa-user prefix grey-text"></i>&nbsp;
+                                                    Name<span>*</span></label>
+                                                <input name="name" type="text" placeholder="Enter Your Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label><i class="fa fa-edit prefix grey-text"></i>&nbsp;
+                                                    Subject<span></span></label>
+                                                <input name="subject" type="text" placeholder="Enter Your Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label><i class="fa fa-envelope prefix grey-text"></i>&nbsp;
+                                                    Email
+                                                    Address<span>*</span></label>
+                                                <input name="email" type="email" placeholder="Enter Your Email Address"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label><i class="fa fa-phone"></i>&nbsp; Phone
+                                                    Number<span></span></label>
+                                                <input name="number" type="text" placeholder="Enter Your Phone Number"
+                                                    pattern="[9]{1}[0-9]{9}"
+                                                    title="Phone number starting with 9 and remaing 9 digit with 0-9"
+                                                    onkeypress="isInputNumber(event)">
+
+                                                <script>
+                                                    function isInputNumber(evt) {
+                                                        var ch = String.fromCharCode(evt.which);
+                                                        if (!(/[0-9]/.test(ch))) {
+                                                            evt.preventDefault();
+                                                        }
+                                                    }
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group message">
+                                                <label><i class="fa fa-comment"></i>&nbsp;
+                                                    Message<span>*</span></label>
+                                                <textarea name="message" placeholder="Enter Your Message"
+                                                    required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group button mb-4">
+                                                <button type="submit" class="btn "><i
+                                                        class="fa fa-paper-plane"></i>&nbsp;
+                                                    Send
+                                                    Message</button>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact -->
+
+
+
+
+
+        <!--Call to  action section-->
+        <section id="action" class="action bg-primary roomy-40">
+            <div class="container">
+                <div class="row">
+                    <div class="maine_action">
+                        <div class="col-md-12">
+                            <div class="action_item text-center">
+                                <h2 class="text-white text-uppercase">Work Hard Today, Enjoy Your Bright Tomorrow.</h2>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4">
+                            <div class="action_btn text-left sm-text-center">
+                                <a href="" class="btn btn-default">Purchase Now</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer id="contact" class="footer action-lage bg-black p-top-80">
+            <!--<div class="action-lage"></div>-->
+            <div class="container">
+                <div class="row">
+                    <div class="widget_area">
+                        <div class="col-md-4">
+                            <div class="widget_item widget_about">
+                                <h5 class="text-white">Contact Me</h5>
+                                <!-- <p class="m-top-20">Lorem ipsum dolor sit amet consec tetur adipiscing elit
+                                    nulla aliquet pretium nisi in cursus
+                                    maecenas nec eleifen.</p> -->
+                                <!-- <div class="widget_ab_item m-top-30">
+                                    <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
+                                    <div class="widget_ab_item_text">
+                                        <h6 class="text-white">Location</h6>
+                                        <p>
+                                            123 suscipit ipsum nam auctor
+                                            mauris dui, ac sollicitudin mauris,
+                                            Bandung</p>
+                                    </div>
+                                </div> -->
+                                <div class="widget_ab_item m-top-30">
+                                    <div class="item_icon"><i class="fa fa-phone"></i></div>
+                                    <div class="widget_ab_item_text">
+                                        <h6 class="text-white">Phone :</h6>
+                                        <p>+977-9812458078</p>
+                                    </div>
+                                </div>
+                                <div class="widget_ab_item m-top-30">
+                                    <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
+                                    <div class="widget_ab_item_text">
+                                        <h6 class="text-white">Email Address :</h6>
+                                        <p>info@sulavadhikari.com.np</p>
+                                    </div>
+                                </div>
+                                <ul class="list-inline m-top-20">
+                                    <li><a target="_blank" href="https://www.facebook.com/Sulav.adhikari.140"
+                                            title="Join With Sulav Adhikari on Facebook"><i
+                                                class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a target="_blank" href="https://www.linkedin.com/in/programsulav/"
+                                            title="Connect with Sulav Adhikari on LinkedIn"><i
+                                                class="fa fa-linkedin"></i></a></li>
+                                    <li><a target="_blank" href="mailto:info@sulavadhikari.com.np"
+                                            title="Send Email to info@sulavadhikari.com.np"><i
+                                                class="fa fa-envelope"></i></a></li>
+                                    <li><a target="_blank" href="https://github.com/adhikarisulav81"
+                                            title="Join With adhikarisulav81 on GitHub"><i class="fa fa-github"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End off widget item -->
+                        </div>
+                        <!-- End off col-md-3 -->
+
+                        <div class="col-md-4">
+                            <div class="widget_item widget_service sm-m-top-50">
+                                <h5 class="text-white">Blogs</h5>
+                                <ul class="m-top-20">
+                                    <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Blog 1</a>
+                                    </li>
+                                    <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Blog 2</a></li>
+                                    <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Blog 3</a>
+                                    </li>
+                                    <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Blog 4</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- End off widget item -->
+                        </div>
+                        <!-- End off col-md-3 -->
+
+                        <div class="col-md-4">
+                            <div class="widget_item widget_service sm-m-top-50">
+                                <h5 class="text-white">Ouick Links</h5>
+                                <ul class="m-top-20">
+                                    <li class="m-top-20"><a href="#"><i class="fa fa-angle-right"></i> Home</a>
+                                    </li>
+                                    <li class="m-top-20"><a href="#about"><i class="fa fa-angle-right"></i> About
+                                        </a></li>
+
+                                    <li class="m-top-20"><a href="#portfolio"><i class="fa fa-angle-right"></i>
+                                            Portfolio</a>
+                                    </li>
+                                    <li class="m-top-20"><a href="#contact"><i class="fa fa-angle-right"></i>
+                                            Contact</a></li>
+                                    <li class="m-top-20"><a href="#faq"><i class="fa fa-angle-right"></i> FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End off widget item -->
+                        </div>
+                        <!-- End off col-md-3 -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
+                <div class="col-md-12">
+                    <p class="wow fadeInRight" data-wow-duration="1s">
+                        © Copyright 2022,<a href="#">Sulav Adhikari</a>| All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+
     </div>
-  </section>
-  <!-- End Video Carousel -->
 
-  <!-- Begin about me section -->
-  <section class="about" id="about">
-    <div class="container">
-      <h1 class="heading"><i class="fas fa-address-card"></i><span> ABOUT</span> ME</h1>
-      <p>Know Me</p>
-      <div class="row" data-aos="fade-up">
-        <div class="about-img col-sm-6">
-          <img src="./images/person3.jpg" title="Sulav Adhikari" alt="my-img">
-        </div>
-        <div class="col-sm-6">
-          <h2 class="text-center">I am Sulav Adhikari</h2>
-          <p>My name Sulav Adhikari.I am an adaptable college student (BSc.IT in Computing) currently attending
-            Islington College. Throughout my academic career, I have been consistently praised as diligent by my
-            teachers and peers. While working on academic and extracurricular projects, I have developed proven
-            teamwork, technical and research skills, which I hope to leverage into the Frontend developer role in
-            future.</p>
+    <!-- JS includes -->
 
-          <div class="social-links">
-            <a href="https://github.com/adhikarisulav81?tab=repositories" title="View My GitHub Repositories"><i
-                class="fab fa-github"></i></a>
-            <a href="http://www.linkedin.com/in/programsulav" title="Connect in LinkedIn"><i
-                class="fab fa-linkedin"></i></a>
-            <a href="#contact" title="Email to adhikarisulav81@gmail.com"><i class="fas fa-envelope-square"></i></a>
-            <a href="#contact" title="Send message to Sulav Adhikari"><i class="fab fa-facebook-square"></i></a>
-          </div>
-          <a class="btn btn-dark" id="button1" href="https://github.com/adhikarisulav81/My-CV.git" role="button"
-            title="Get My CV"><i class="fas fa-download"></i>
-            Download My CV</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End about me section -->
+    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
 
-  <!-- Begin my project section -->
-  <section class="my-project" id="project">
-    <div class="container">
-      <h1 class="heading"><i class="fas fa-tasks"></i> MY <span>PROJECTS</span></h1>
-      <p>Have all the Projects and Tasks that we created..</p>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/css/slick/slick.js"></script>
+    <script src="assets/css/slick/slick.min.js"></script>
+    <script src="assets/js/jquery.collapse.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
 
-      <div class="card-wrapper" data-aos="fade-down">
-        <div class="card">
-          <div class="overlay" title="Project 1">
-            <span class="text-center">Language: HTML, CSS & JS</span>
-            <a href="https://github.com/adhikarisulav81/html_website.git">
-              <h6 class="text-center">Irresponsive Website Template</h6>
-            </a>
-          </div>
-          <img src="./images/task-htmlCss.jpg" alt="project-1">
-        </div>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/mode.js"></script>
 
-        <div class="card">
-          <div class="overlay" title="Project 2">
-            <span class="text-center">Language: HTML, CSS and JS</span>
-            <a href="https://github.com/adhikarisulav81/sulav-portfolio.git">
-              <h6 class="text-center">My PortFolio Website</h6>
-            </a>
-          </div>
-          <img src="./images/task-portfolio.jpg" alt="project-2">
-        </div>
-
-        <div class="card">
-          <div class="overlay" title="Project 3">
-            <span class="text-center">Language: JavaScript</span>
-            <a href="https://github.com/adhikarisulav81/JavaScript-Clock.git">
-              <h6 class="text-center">JavaScript Clock</h6>
-            </a>
-          </div>
-          <img src="./images/task-javascript.jpg" alt="project-3">
-        </div>
-
-        <div class="card">
-          <div class="overlay" title="Project 4">
-            <span class="text-center">Language: PHP and MySQL</span>
-            <a href="#">
-              <h6 class="text-center">Dynamic Website</h6>
-            </a>
-          </div>
-          <img src="./images/task-php-mysql.jpg" alt="project-4">
-        </div>
-
-        <div class="card">
-          <div class="overlay" title="Project 5">
-            <span class="text-center">Framework: Laravel</span>
-            <a href="https://github.com/adhikarisulav81/laravel-project.git">
-              <h6 class="text-center">Customer Detail with CRUD Operation</h6>
-            </a>
-          </div>
-          <img src="./images/task-laravel.jpg" alt="project-5">
-        </div>
-
-        <div class="card">
-          <div class="overlay" title="Project 6">
-            <span class="text-center">Language: Python</span>
-            <a href="https://github.com/adhikarisulav81/Python-Program.git">
-              <h6 class="text-center">Library Management System</h6>
-            </a>
-          </div>
-          <img src="./images/task-python.jpg" alt="project-6">
-        </div>
-
-        <div class="card">
-          <div class="overlay" title="Project 7">
-            <span class="text-center">Language: JAVA</span>
-            <a href="https://github.com/adhikarisulav81/Java-Program.git">
-              <h6 class="text-center">Applicants Hiring Application</h6>
-            </a>
-          </div>
-          <img src="./images/task-java.jpg" alt="project-7">
-        </div>
-
-        <div class="card" title="Project 8">
-          <div class="overlay">
-            <span class="text-center">Language: HTML, CSS and JS</span>
-            <a href="https://github.com/adhikarisulav81/Sulweb.git">
-              <h6 class="text-center">Responsive Web Page Template</h6>
-            </a>
-          </div>
-          <img src="./images/task-webPage.jpg" alt="project-8">
-        </div>
-
-        <div class="card">
-          <div class="overlay" title="Project 9">
-            <span class="text-center">Language: JAVA in Android Studio</span>
-            <a href="https://github.com/adhikarisulav81/ClockAppAssignment.git">
-              <h6 class="text-center">Clock Application</h6>
-            </a>
-          </div>
-          <img src="./images/task-android.jpg" alt="project-9">
-        </div>
-
-        <div class="card">
-          <div class="overlay" title="Project 10">
-            <span class="text-center">Language: XML, Schema & CSS</span>
-            <a href="https://github.com/adhikarisulav81/XML-Schema-CSS-Task.git">
-              <h6 class="text-center">Online Vehicle Shop Info Website</h6>
-            </a>
-          </div>
-          <img src="./images/task-xml.png" alt="project-10">
-        </div>
-
-        <div class="card">
-          <div class="overlay" title="Project 11">
-            <span class="text-center">Language: JAVA</span>
-            <a href="https://github.com/adhikarisulav81/Java-Progam.git">
-              <h6 class="text-center">House or Flat Rental Management System</h6>
-            </a>
-          </div>
-          <img src="./images/task-java.jpg" alt="project-11">
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End of My project Section -->
-
-  <!-- begin my blogs section -->
-  <section class="my-blog" id="blog">
-    <div class="container">
-      <h1 class="heading"><i class="fas fa-blog"></i> MY <span>BLOG</span></h1>
-      <p>Have a view at my blogs.</p>
-      <div class="card-group" data-aos="fade-up">
-        <div class="card">
-          <img src="images/task-laravel.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Laravel</h5>
-            <p class="card-text">Short Description About Laravel Tips.</p>
-            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/laravel-description.git"
-              role="button" title="Read More Info"><i class="fas fa-book-reader"></i>
-              Read More..</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="images/task-javascript.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">JavaScript</h5>
-            <p class="card-text">Short Description About JavaScript.</p>
-            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/JS-description.git" role="button"
-              title="Read More Info"><i class="fas fa-book-reader"></i>
-              Read More..</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="images/task-java.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Java</h5>
-            <p class="card-text">Short Description About Java.</p>
-            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/Java-description.git" role="button"
-              title="Read More Info"><i class="fas fa-book-reader"></i>
-              Read More..</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="images/b-ethics.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Professional Ethics and Law</h5>
-            <p class="card-text">Know About Professional Ethics and Law</p>
-            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/ProfessionalEthics-description.git"
-              role="button" title="Read More Info"><i class="fas fa-book-reader"></i>
-              Read More..</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="images/task-javascript.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">JavaScript</h5>
-            <p class="card-text">JS in 10 minutes</p>
-            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/JS-description.git" role="button"
-              title="Read More Info"><i class="fas fa-book-reader"></i>
-              Read More..</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="images/task-python.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Learn Python</h5>
-            <p class="card-text">Brief Intro About Python</p>
-            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/Python-description.git"
-              role="button" title="Read More Info"><i class="fas fa-book-reader"></i>
-              Read More..</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- end my blogs section -->
-
-  <!-- Start Gallery Section -->
-  <section class="my-gallery" id="gallery">
-    <div class="container">
-      <h1 class="heading"><i class="fas fa-photo-video"></i> MY <span>GALLERY</span></h1>
-      <p>look At My Gallery Collection.</p>
-      <div class="row" data-aos="fade-down">
-
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="./images/person3.jpg" alt="" style="width:100%">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="./images/person3.jpg" alt="" style="width:100%">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="./images/person3.jpg" alt="" style="width:100%">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="./images/person1.jpg" alt="" style="width:100%">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="./images/person1.jpg" alt="" style="width:100%">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="./images/person1.jpg" alt="" style="width:100%">
-          </div>
-        </div>
-
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- End Gallery Section -->
-
-  <!-- Start Coursework Content Section -->
-  <section class="my-coursework" id="coursework">
-    <div class="container">
-      <h1 class="heading"><i class="fab fa-leanpub"></i> MY <span>COURSEWORK</span></h1>
-      <p>Review My College Coursework.</p>
-
-      <div class="row">
-        <div class="card-deck text-center text-align-justify">
-          <div class="card">
-            <img src="images/b-ethics.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Ethics CW</h5>
-              <p class="card-text">Learn And Know More About Theranos Scandal.</p>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/ProfessionalEthics-CW.git"
-                role="button">Click Here</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/cw-softwareEngineering.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Software Engineering CW</h5>
-              <p class="card-text">Boost Your Knowledge Regarding Gantt Chart, Prototype Designing, Class Diagram, Use
-                Case Diagram, Communication And Sequence Diagram.</p>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/SoftwareEngineering-CW.git"
-                role="button">Click Here</a>
-
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/task-python.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Python CW</h5>
-              <p class="card-text">Coursework Regarding Bubblesort And A Simple Library Management System.</p>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/Python-CW.git"
-                role="button">Click
-                Here</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="images/task-java.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Java CW</h5>
-              <p class="card-text">View My Two JAVA Courseworks. One Is Regarding Hiring Applicants In A Company And
-                Another Is House Or Flat Rental Management System.</p>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/Java-CW.git" role="button">Click
-                Here</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="images/cw-database.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Database CW</h5>
-              <p class="card-text">Get Brief Overview Regarding Database Topics like: Normalization, Data Dictionary,
-                ERD and Schema Diagram, Database Queries and so on.</p>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/database-CW.git"
-                role="button">Click
-                Here</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- End Coursework Content Section -->
-
-  <!-- Start of Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <h1 class="heading"><i class="fas fa-user-tie"></i> <span>CONTACT</span> ME</h1>
-      <form action="mailto:adhikarisulav81@gmail.com" method="POST" enctype="text/plain" data-aos="fade-down">
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="name"><i class="fas fa-user-tie"></i> Name</label>
-            <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your Name" value=""
-              required>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="email"><i class="fas fa-envelope-open-text"></i> Email</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="Enter Your Email" value=""
-              required>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="city"><i class="fas fa-city"></i> City</label>
-            <input type="text" name="city" class="form-control" placeholder="Enter Your City" id="city" required>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="country"><i class="fas fa-flag"></i> Country</label>
-            <select class="custom-select" id="country" required>
-              <option selected disabled value="">Choose Country...</option>
-              <option>Nepal</option>
-              <option>India</option>
-              <option>China</option>
-            </select>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="phone"><i class="fas fa-phone-volume"></i> Phone Number</label>
-            <input type="number" name="phone" class="form-control" placeholder="Enter Your Number" id="phone" required>
-          </div>
-          <label for="comment"><i class="fas fa-comments"></i> Comment</label>
-          <textarea class="form-control" name="comment" id="comment" rows="5"
-            placeholder="Enter Your Message"></textarea>
-        </div>
-        <p>
-          <label>
-            <input type="checkbox" class="filled-in" checked="checked" />
-            <span>Agreed to Terms and Policies.</span>
-          </label>
-        </p>
-        <button class="btn btn-dark" id="btnSubmit" type="submit" title="Submit"><i class="fas fa-paper-plane"></i>
-          Submit</button>
-      </form>
-    </div>
-  </section>
-  <!-- End of Contact Section -->
-
-  <!-- Google Map Implementation -->
-  <div class="googleMap" id="map" data-aos="zoom-in">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7807225345923!2d85.27895471513779!3d27.6931713827977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb187a97f390b1%3A0xec3f47092df0d4ca!2sKalanki%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1600610032433!5m2!1sen!2snp"
-      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-      tabindex="0"></iframe>
-  </div>
-
-  <!-- Begin Scroll Up Button -->
-  <a href="#" class="scrollupbtn btn btn-outline-dark" title="Scroll Up"><i class="fas fa-arrow-up"></i></a>
-  <!-- End of Scroll Up Button -->
-
-  <!-- Begin Footer Section -->
-  <footer>
-    <div class="copyright">
-      &copy; Copyright 2020 | Sulav Adhikari. All rights reserved.
-    </div>
-
-    <div class="social-links">
-      <a href="https://github.com/adhikarisulav81?tab=repositories" title="View My GitHub Repositories"><i
-          class="fab fa-github"></i></a>
-      <a href="http://www.linkedin.com/in/programsulav" title="Connect in LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="#contact" title="Email to adhikarisulav81@gmail.com"><i class="fas fa-envelope-square"></i></a>
-      <a href="#contact" title="Send message to Sulav Adhikari"><i class="fab fa-facebook-square"></i></a>
-    </div>
-  </footer>
-  <!-- End of a Footer Section -->
-
-  <!-- Importing AOS library to apply animation to the content while scrolling. Like in feeback section, the cards animate as up and down because of this library -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      //disable: 'mobile',    //this disables the scrolling animation for mobile screens
-      offset: 350,
-      duration: 2000
-    });
-  </script>
-  <!-- End of Importing library for the animation -->
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS and lastly fontawesome-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/fontawesome.min.js"></script>
-
-  <!-- JS for Mode in a Webpage (Dark or light mode) -->
-  <script src="js/mode.js"></script>
 </body>
 
 </html>
