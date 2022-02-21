@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="css/fontawesome.all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Linking AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>PortFolio</title>
+</head>
+
+<body>
+
+  <!-- Begin Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <i class="fas fa-portrait" style="width: 60px; height: 40px;"></i>
+      <a class="navbar-brand" href="#" title="My Portfolio"> &lt; Sulav Adhikari /&gt;</a>
+      <button class="navbar-toggler" style="outline: none; margin: none;" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation" title="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" title="Home"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#about" title="Know Me"><i class="fas fa-address-card"></i> About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#project" title="My Projects"><i class="fas fa-tasks"></i> Task</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#blog" title="My Blogs"><i class="fas fa-blog"></i> Blog</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#gallery" title="My Gallery"><i class="fas fa-photo-video"></i> Gallery</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#coursework" title="My Coursework"><i class="fab fa-leanpub"></i> Coursework</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contact" title="Contact Me"><i class="fas fa-user-tie"></i> Contact</a>
+          </li>
+        </ul>
+        <!-- Begin of Button for changing the mode of a webpage -->
+        <a class="mode btn btn-secondary" onclick="myFunction()" role="button" title="Change Mode"><i
+            class="fas fa-moon"></i></a>
+        <!-- End of Button for changing the mode of a webpage -->
+      </div>
+    </div>
+  </nav>
+  <!-- End Navigation bar -->
+
+  <!-- Begin Video Carousel -->
+  <section class="video-carousel">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <video class="video-fluid" style="opacity: 0.3;" autoplay loop muted>
+            <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+            <!-- another video src: https://mdbootstrap.com/img/video/Tropical.mp4 -->
+          </video>
+          <div class="carousel-caption">
+            <h5>Hello World !!!</h5>
+            <p>Welcome To My PortFolio Website</p>
+            <div class="button">
+              <a class="btn btn-dark" id="btn1" href="./cv/Sulav Adhikari.pdf" role="button" title="View My CV"><i
+                  class="fas fa-address-card"></i> Glance My CV</a>
+              <a class="btn btn-dark" id="btn2" href="#" role="button" onclick="clicked()"
+                title="Print My Website Template"><i class="fas fa-print"></i> Print Template</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video class="video-fluid" style="opacity: 0.3;" autoplay loop muted>
+            <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" type=" video/mp4" />
+            <!-- https://mdbootstrap.com/img/video/forest.mp4 -->
+          </video>
+          <div class="carousel-caption">
+            <h5>Know Me Better !!!</h5>
+            <p> A Front End Developer</p>
+            <div class="button">
+              <a class="btn btn-dark" id="btn1" href="./cv/Sulav Adhikari.pdf" role="button" title="Glance My CV"><i
+                  class="fas fa-address-card"></i> Glance My CV</a>
+              <a class="btn btn-dark" id="btn2" href="#" role="button" onclick="clicked()"
+                title="Print My Website Template"><i class="fas fa-print"></i> Print Template</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video class="video-fluid" style="opacity: 0.3;" autoplay loop muted>
+            <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+            <!-- https://mdbootstrap.com/img/video/Agua-natural.mp4 -->
+          </video>
+          <div class="carousel-caption">
+            <h5>Thank You !!!</h5>
+            <p>Hope To See You Soon</p>
+            <div class="button">
+              <a class="btn btn-dark" id="btn1" href="./cv/Sulav Adhikari.pdf" role="button" title="Glance My CV"><i
+                  class="fas fa-address-card"></i> Glance My CV</a>
+              <a class="btn btn-dark" id="btn2" href="#" role="button" onclick="clicked()"
+                title="Print My Website Template"><i class="fas fa-print"></i> Print Template</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" title="Previous" role="button"
+        data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" title="Next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <!-- End Video Carousel -->
+
+  <!-- Begin about me section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h1 class="heading"><i class="fas fa-address-card"></i><span> ABOUT</span> ME</h1>
+      <p>Know Me</p>
+      <div class="row" data-aos="fade-up">
+        <div class="about-img col-sm-6">
+          <img src="./images/person3.jpg" title="Sulav Adhikari" alt="my-img">
+        </div>
+        <div class="col-sm-6">
+          <h2 class="text-center">I am Sulav Adhikari</h2>
+          <p>My name Sulav Adhikari.I am an adaptable college student (BSc.IT in Computing) currently attending
+            Islington College. Throughout my academic career, I have been consistently praised as diligent by my
+            teachers and peers. While working on academic and extracurricular projects, I have developed proven
+            teamwork, technical and research skills, which I hope to leverage into the Frontend developer role in
+            future.</p>
+
+          <div class="social-links">
+            <a href="https://github.com/adhikarisulav81?tab=repositories" title="View My GitHub Repositories"><i
+                class="fab fa-github"></i></a>
+            <a href="http://www.linkedin.com/in/programsulav" title="Connect in LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+            <a href="#contact" title="Email to adhikarisulav81@gmail.com"><i class="fas fa-envelope-square"></i></a>
+            <a href="#contact" title="Send message to Sulav Adhikari"><i class="fab fa-facebook-square"></i></a>
+          </div>
+          <a class="btn btn-dark" id="button1" href="https://github.com/adhikarisulav81/My-CV.git" role="button"
+            title="Get My CV"><i class="fas fa-download"></i>
+            Download My CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End about me section -->
+
+  <!-- Begin my project section -->
+  <section class="my-project" id="project">
+    <div class="container">
+      <h1 class="heading"><i class="fas fa-tasks"></i> MY <span>PROJECTS</span></h1>
+      <p>Have all the Projects and Tasks that we created..</p>
+
+      <div class="card-wrapper" data-aos="fade-down">
+        <div class="card">
+          <div class="overlay" title="Project 1">
+            <span class="text-center">Language: HTML, CSS & JS</span>
+            <a href="https://github.com/adhikarisulav81/html_website.git">
+              <h6 class="text-center">Irresponsive Website Template</h6>
+            </a>
+          </div>
+          <img src="./images/task-htmlCss.jpg" alt="project-1">
+        </div>
+
+        <div class="card">
+          <div class="overlay" title="Project 2">
+            <span class="text-center">Language: HTML, CSS and JS</span>
+            <a href="https://github.com/adhikarisulav81/sulav-portfolio.git">
+              <h6 class="text-center">My PortFolio Website</h6>
+            </a>
+          </div>
+          <img src="./images/task-portfolio.jpg" alt="project-2">
+        </div>
+
+        <div class="card">
+          <div class="overlay" title="Project 3">
+            <span class="text-center">Language: JavaScript</span>
+            <a href="https://github.com/adhikarisulav81/JavaScript-Clock.git">
+              <h6 class="text-center">JavaScript Clock</h6>
+            </a>
+          </div>
+          <img src="./images/task-javascript.jpg" alt="project-3">
+        </div>
+
+        <div class="card">
+          <div class="overlay" title="Project 4">
+            <span class="text-center">Language: PHP and MySQL</span>
+            <a href="#">
+              <h6 class="text-center">Dynamic Website</h6>
+            </a>
+          </div>
+          <img src="./images/task-php-mysql.jpg" alt="project-4">
+        </div>
+
+        <div class="card">
+          <div class="overlay" title="Project 5">
+            <span class="text-center">Framework: Laravel</span>
+            <a href="https://github.com/adhikarisulav81/laravel-project.git">
+              <h6 class="text-center">Customer Detail with CRUD Operation</h6>
+            </a>
+          </div>
+          <img src="./images/task-laravel.jpg" alt="project-5">
+        </div>
+
+        <div class="card">
+          <div class="overlay" title="Project 6">
+            <span class="text-center">Language: Python</span>
+            <a href="https://github.com/adhikarisulav81/Python-Program.git">
+              <h6 class="text-center">Library Management System</h6>
+            </a>
+          </div>
+          <img src="./images/task-python.jpg" alt="project-6">
+        </div>
+
+        <div class="card">
+          <div class="overlay" title="Project 7">
+            <span class="text-center">Language: JAVA</span>
+            <a href="https://github.com/adhikarisulav81/Java-Program.git">
+              <h6 class="text-center">Applicants Hiring Application</h6>
+            </a>
+          </div>
+          <img src="./images/task-java.jpg" alt="project-7">
+        </div>
+
+        <div class="card" title="Project 8">
+          <div class="overlay">
+            <span class="text-center">Language: HTML, CSS and JS</span>
+            <a href="https://github.com/adhikarisulav81/Sulweb.git">
+              <h6 class="text-center">Responsive Web Page Template</h6>
+            </a>
+          </div>
+          <img src="./images/task-webPage.jpg" alt="project-8">
+        </div>
+
+        <div class="card">
+          <div class="overlay" title="Project 9">
+            <span class="text-center">Language: JAVA in Android Studio</span>
+            <a href="https://github.com/adhikarisulav81/ClockAppAssignment.git">
+              <h6 class="text-center">Clock Application</h6>
+            </a>
+          </div>
+          <img src="./images/task-android.jpg" alt="project-9">
+        </div>
+
+        <div class="card">
+          <div class="overlay" title="Project 10">
+            <span class="text-center">Language: XML, Schema & CSS</span>
+            <a href="https://github.com/adhikarisulav81/XML-Schema-CSS-Task.git">
+              <h6 class="text-center">Online Vehicle Shop Info Website</h6>
+            </a>
+          </div>
+          <img src="./images/task-xml.png" alt="project-10">
+        </div>
+
+        <div class="card">
+          <div class="overlay" title="Project 11">
+            <span class="text-center">Language: JAVA</span>
+            <a href="https://github.com/adhikarisulav81/Java-Progam.git">
+              <h6 class="text-center">House or Flat Rental Management System</h6>
+            </a>
+          </div>
+          <img src="./images/task-java.jpg" alt="project-11">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End of My project Section -->
+
+  <!-- begin my blogs section -->
+  <section class="my-blog" id="blog">
+    <div class="container">
+      <h1 class="heading"><i class="fas fa-blog"></i> MY <span>BLOG</span></h1>
+      <p>Have a view at my blogs.</p>
+      <div class="card-group" data-aos="fade-up">
+        <div class="card">
+          <img src="images/task-laravel.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Laravel</h5>
+            <p class="card-text">Short Description About Laravel Tips.</p>
+            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/laravel-description.git"
+              role="button" title="Read More Info"><i class="fas fa-book-reader"></i>
+              Read More..</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/task-javascript.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">Short Description About JavaScript.</p>
+            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/JS-description.git" role="button"
+              title="Read More Info"><i class="fas fa-book-reader"></i>
+              Read More..</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/task-java.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Java</h5>
+            <p class="card-text">Short Description About Java.</p>
+            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/Java-description.git" role="button"
+              title="Read More Info"><i class="fas fa-book-reader"></i>
+              Read More..</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/b-ethics.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Professional Ethics and Law</h5>
+            <p class="card-text">Know About Professional Ethics and Law</p>
+            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/ProfessionalEthics-description.git"
+              role="button" title="Read More Info"><i class="fas fa-book-reader"></i>
+              Read More..</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/task-javascript.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">JS in 10 minutes</p>
+            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/JS-description.git" role="button"
+              title="Read More Info"><i class="fas fa-book-reader"></i>
+              Read More..</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/task-python.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Learn Python</h5>
+            <p class="card-text">Brief Intro About Python</p>
+            <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/Python-description.git"
+              role="button" title="Read More Info"><i class="fas fa-book-reader"></i>
+              Read More..</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end my blogs section -->
+
+  <!-- Start Gallery Section -->
+  <section class="my-gallery" id="gallery">
+    <div class="container">
+      <h1 class="heading"><i class="fas fa-photo-video"></i> MY <span>GALLERY</span></h1>
+      <p>look At My Gallery Collection.</p>
+      <div class="row" data-aos="fade-down">
+
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="./images/person3.jpg" alt="" style="width:100%">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="./images/person3.jpg" alt="" style="width:100%">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="./images/person3.jpg" alt="" style="width:100%">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="./images/person1.jpg" alt="" style="width:100%">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="./images/person1.jpg" alt="" style="width:100%">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="./images/person1.jpg" alt="" style="width:100%">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Gallery Section -->
+
+  <!-- Start Coursework Content Section -->
+  <section class="my-coursework" id="coursework">
+    <div class="container">
+      <h1 class="heading"><i class="fab fa-leanpub"></i> MY <span>COURSEWORK</span></h1>
+      <p>Review My College Coursework.</p>
+
+      <div class="row">
+        <div class="card-deck text-center text-align-justify">
+          <div class="card">
+            <img src="images/b-ethics.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ethics CW</h5>
+              <p class="card-text">Learn And Know More About Theranos Scandal.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/ProfessionalEthics-CW.git"
+                role="button">Click Here</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/cw-softwareEngineering.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Software Engineering CW</h5>
+              <p class="card-text">Boost Your Knowledge Regarding Gantt Chart, Prototype Designing, Class Diagram, Use
+                Case Diagram, Communication And Sequence Diagram.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/SoftwareEngineering-CW.git"
+                role="button">Click Here</a>
+
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/task-python.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Python CW</h5>
+              <p class="card-text">Coursework Regarding Bubblesort And A Simple Library Management System.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/Python-CW.git"
+                role="button">Click
+                Here</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/task-java.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Java CW</h5>
+              <p class="card-text">View My Two JAVA Courseworks. One Is Regarding Hiring Applicants In A Company And
+                Another Is House Or Flat Rental Management System.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/Java-CW.git" role="button">Click
+                Here</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/cw-database.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Database CW</h5>
+              <p class="card-text">Get Brief Overview Regarding Database Topics like: Normalization, Data Dictionary,
+                ERD and Schema Diagram, Database Queries and so on.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark" href="https://github.com/adhikarisulav81/database-CW.git"
+                role="button">Click
+                Here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Coursework Content Section -->
+
+  <!-- Start of Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h1 class="heading"><i class="fas fa-user-tie"></i> <span>CONTACT</span> ME</h1>
+      <form action="mailto:adhikarisulav81@gmail.com" method="POST" enctype="text/plain" data-aos="fade-down">
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="name"><i class="fas fa-user-tie"></i> Name</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your Name" value=""
+              required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email"><i class="fas fa-envelope-open-text"></i> Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Enter Your Email" value=""
+              required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="city"><i class="fas fa-city"></i> City</label>
+            <input type="text" name="city" class="form-control" placeholder="Enter Your City" id="city" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="country"><i class="fas fa-flag"></i> Country</label>
+            <select class="custom-select" id="country" required>
+              <option selected disabled value="">Choose Country...</option>
+              <option>Nepal</option>
+              <option>India</option>
+              <option>China</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="phone"><i class="fas fa-phone-volume"></i> Phone Number</label>
+            <input type="number" name="phone" class="form-control" placeholder="Enter Your Number" id="phone" required>
+          </div>
+          <label for="comment"><i class="fas fa-comments"></i> Comment</label>
+          <textarea class="form-control" name="comment" id="comment" rows="5"
+            placeholder="Enter Your Message"></textarea>
+        </div>
+        <p>
+          <label>
+            <input type="checkbox" class="filled-in" checked="checked" />
+            <span>Agreed to Terms and Policies.</span>
+          </label>
+        </p>
+        <button class="btn btn-dark" id="btnSubmit" type="submit" title="Submit"><i class="fas fa-paper-plane"></i>
+          Submit</button>
+      </form>
+    </div>
+  </section>
+  <!-- End of Contact Section -->
+
+  <!-- Google Map Implementation -->
+  <div class="googleMap" id="map" data-aos="zoom-in">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7807225345923!2d85.27895471513779!3d27.6931713827977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb187a97f390b1%3A0xec3f47092df0d4ca!2sKalanki%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1600610032433!5m2!1sen!2snp"
+      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+  </div>
+
+  <!-- Begin Scroll Up Button -->
+  <a href="#" class="scrollupbtn btn btn-outline-dark" title="Scroll Up"><i class="fas fa-arrow-up"></i></a>
+  <!-- End of Scroll Up Button -->
+
+  <!-- Begin Footer Section -->
+  <footer>
+    <div class="copyright">
+      &copy; Copyright 2020 | Sulav Adhikari. All rights reserved.
+    </div>
+
+    <div class="social-links">
+      <a href="https://github.com/adhikarisulav81?tab=repositories" title="View My GitHub Repositories"><i
+          class="fab fa-github"></i></a>
+      <a href="http://www.linkedin.com/in/programsulav" title="Connect in LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#contact" title="Email to adhikarisulav81@gmail.com"><i class="fas fa-envelope-square"></i></a>
+      <a href="#contact" title="Send message to Sulav Adhikari"><i class="fab fa-facebook-square"></i></a>
+    </div>
+  </footer>
+  <!-- End of a Footer Section -->
+
+  <!-- Importing AOS library to apply animation to the content while scrolling. Like in feeback section, the cards animate as up and down because of this library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      //disable: 'mobile',    //this disables the scrolling animation for mobile screens
+      offset: 350,
+      duration: 2000
+    });
+  </script>
+  <!-- End of Importing library for the animation -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS and lastly fontawesome-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/fontawesome.min.js"></script>
+
+  <!-- JS for Mode in a Webpage (Dark or light mode) -->
+  <script src="js/mode.js"></script>
+</body>
+
+</html>
