@@ -26,18 +26,48 @@ Author URI: http://xpeedstudio.com
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+   :root {
+	/* --primary-color: #00a885;
+	--secondary-color: #13A0B2; */
+    --primary-color: #2EA043;
+    --secondary-color: #2EA043; 
+    --black: #000;
+	--white: #fff;
+	--gray: #757575;
+    --darkgray: #444444;
+/*   
+	--facebook-color: #4267b2;
+	--google-color: #db4437; */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    }
+
+
+
+
 html,
 body {
     scroll-behavior: smooth;
     font-size: 14px;
-    color: #797979;
+    color: var(--gray);
     width: 100%;
     padding: 0;
     margin-left: 0;
     margin-right: 0;
     font-weight: 400;
     width:100%;
-    font-family: 'Raleway', sans-serif;
+    
 }
 
 /*------------------------------------------------------------------*/
@@ -102,11 +132,11 @@ section { overflow: hidden; }
 /*text color*/
 
 .text-muted{}
-.text-primary{color: #00a885 !important;;}
-.text-finence{color:#13A0B2 !important;;}
-.text-mega{color:#00a885 !important;;}
-.text-white{color:#fff !important;;}
-.text-black{color:#000 !important;}
+.text-primary{color: var(--primary-color) !important;;}
+.text-finence{color:var(--secondary-color) !important;;}
+.text-mega{color:var(--primary-color) !important;;}
+.text-white{color:var(--white) !important;;}
+.text-black{color:var(--black) !important;}
 .text-warning{}
 .text-danger{}
 .disabled{
@@ -115,14 +145,14 @@ section { overflow: hidden; }
 
 /*bacground color*/
 .lightbg {
-    background-color: #f2f2f2;
+    background-color: var(--white);
 }
-.bg-primary{background-color: #00a885;}
-.bg-finence{background-color:#13A0B2;}
-.bg-mega{background-color:#1b1b1b;}
-.bg-grey{background-color: #f5f5f5;}
-.bg-black{background-color: #222222;}
-.bg-white{background-color: #fff;}
+.bg-primary{background-color: var(--primary-color);}
+.bg-finence{background-color:var(--secondary-color);}
+.bg-mega{background-color:var(--black);}
+.bg-grey{background-color: var(--white);}
+.bg-black{background-color: var(--black);}
+.bg-white{background-color: var(--white);}
 
 img {
     -moz-user-select: none;
@@ -200,14 +230,14 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 .form-control{
     border-radius: 0px;
-    border:1px solid #ccc;
+    border:1px solid var(--white);
     box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
     width: 100%;
     height: 50px;
 }
 
 .form-control:focus {
-    border-color: #bcefeb;
+    border-color: var(--white);
     outline: 0;
     box-shadow: inset 0 0px 0px rgba(0,0,0,.075),0 0 0px rgba(102,175,233,.6);
 }
@@ -220,7 +250,7 @@ h5,
 h6 {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    color:#1a1a1a;
+    color:var(--black);
     margin-bottom: 10px;
 }
 
@@ -256,7 +286,7 @@ h3 span,
 h4 span,
 h5 span,
 p span{
-    color:#00a885;
+    color:var(--primary-color);
 }
 
 p {
@@ -305,7 +335,7 @@ Section
 
 .parallax-section {
     max-width: 100%;
-    color: #ffffff;
+    color: var(--white)fff;
 }
 
 ul{
@@ -351,19 +381,19 @@ Separator
     width:85px;
     height:2px;
     margin:20px 0px;
-    background: #00a885;
+    background: var(--primary-color);
 }
 .separator_auto{
     width:85px;
     height:2px;
     margin:20px auto;
-    background: #00a885;
+    background: var(--primary-color);
 }
 .separator_small{
     width:30px;
     height:2px;
     margin:20px 0px;
-    background: #00a885;
+    background: var(--primary-color);
 }
 
 /*
@@ -378,28 +408,28 @@ Button
     padding: 1rem 4rem;
 }
 .btn-primary{
-    color: #fff;
-    background-color: #00a885;
+    color: var(--white);
+    background-color: var(--primary-color);
     border:1px solid;
-    border-color: #00a885;
+    border-color: var(--primary-color);
 
 }
 .btn-primary:hover{
-    background-color: #eee;
-    border-color: #eee;
-    color:#00a885;
+    background-color: var(--white);
+    border-color: var(--white);
+    color:var(--primary-color);
 }
 
 .btn-default{
-    color: #fff;
+    color: var(--white);
     background-color: transparent;
     border:1px solid;
-    border-color: #b6b6b6;
+    border-color: var(gray);
 }
 .btn-default:hover{
-    color: #fff;
-    background-color: #00a885;
-    border-color: #00a885;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 
@@ -638,7 +668,7 @@ p-0{
 /*for placeholder changes*/
 
 input[type="email"].form-control::-webkit-input-placeholder {
-    color: #797979;
+    color: var(--gray);
     background-color: transparent;
 }
 
@@ -649,12 +679,12 @@ input::placeholder ,
 input::-webkit-input-placeholder ,
 input::-moz-placeholder ,
 input::-ms-input-placeholder {
-    color: #cdcdcd;
+    color: var(--gray);
 }
 textarea::-webkit-input-placeholder,
 textarea::-moz-input-placeholder,
 textarea::-ms-input-placeholder{
-    color: #cdcdcd;
+    color: var(--gray);
     padding: 5px;
 }
 
@@ -682,7 +712,7 @@ textarea::-ms-input-placeholder{
 .head_title h5{
     font-weight: 400;
     font-size:1.125rem;
-    color:#999999;
+    color:var(--gray);
 }
 
 /*End off pridifain css*/
@@ -691,7 +721,7 @@ textarea::-ms-input-placeholder{
 
 /*Preloader*/
 #loading{
-    background-color: #00a885;
+    background-color: var(--primary-color);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -724,7 +754,7 @@ textarea::-ms-input-placeholder{
 .object{
     width: 25px;
     height: 25px;
-    background-color: #FFF;
+    background-color: var(--white);
     float: left;
 
 }
@@ -846,23 +876,23 @@ Nav Menu style
 .navbar-callus li a{
     font-size:14px;
     padding: 10px;
-    color:#444444;
+    color:var(--darkgray);
     display: inline-block;
 }
 .navbar-callus li a i{
     font-size:13px;
-    color:#1abc9c;
+    color:var(--primary-color);
     margin-right: 5px;
 }
 .navbar-socail li a{
     font-size:16px;
     padding: 10px;
-    color:#aaaaaa;
+    color:var(--gray);
     display: inline-block;
 }
 .navbar-socail li a:hover{
-    background-color: #3765a3;
-    color:#fff;
+    background-color: var(--primary-color);
+    color:var(--white);
 }
 
 
@@ -902,11 +932,11 @@ Home Section style
     content: "";
     text-align: center;
     opacity: 0.9;
-    color: white;
-    border:1px solid #fff;
+    color: var(--white);
+    border:1px solid var(--white);
     border-radius: 50%;
     -webkit-font-smoothing: antialiased;
-    background-color: #fff;
+    background-color: var(--white);
 }
 .main_home .slick-dots li {
     width: 10px;
@@ -915,7 +945,7 @@ Home Section style
 }
 .main_home .slick-dots li.slick-active button:before{
     opacity: 1;
-    background-color: #00a885;
+    background-color: var(--primary-color);
 }
 .main_home .slick-dots{
     bottom: -200px;
@@ -924,7 +954,7 @@ Home Section style
 .work_container .slick-arrow ,
 .main_home .slick-arrow{
     font-size:3rem;
-    color:#fff;
+    color:var(--white);
     top:30%;
     position: absolute;
     z-index: 90;
@@ -956,7 +986,7 @@ Featured section style
 }
 .features_item .f_item_icon i{
     font-size:4rem;
-    color:#00a885;
+    color:var(--primary-color);
 }
 .features_item .f_item_text{
     display: inline-block;
@@ -984,7 +1014,7 @@ Featured section style
 
 }
 .business_item p{
-    color:#333333;
+    color:var(--darkgray);
     line-height: 2rem;
     font-size:14px;
     font-weight: 500;
@@ -998,7 +1028,7 @@ Featured section style
     margin-left:10px;
 }
 .business_item .business_btn .btn-default{
-    color:#444444;
+    color:var(--darkgray);
 }
 
 
@@ -1013,7 +1043,7 @@ Featured section style
 }
 
 .business_slid .business_items{
-    background-color: #fff;
+    background-color: var(--white);
     margin: 0;
 }
 
@@ -1028,7 +1058,7 @@ Featured section style
     text-align: center;
     font-size:20px;
     transition: all 0.6s;
-    color:#fff;
+    color:var(--white);
 }
 .business_slid .nextprevleft{
     left:5.9%;
@@ -1042,7 +1072,7 @@ Featured section style
         height: 25px;
         line-height: 25px;*/
     /*text-align: center;*/
-    background-color: #ddd;
+    background-color: var(--white);
     border-radius: 50%;
 }
 
@@ -1080,8 +1110,8 @@ work Section style
 
 
 .main_product .carousel-control{
-    background-color: #fff;
-    color:#333;
+    background-color: var(--white);
+    color:var(--darkgray);
     border-radius: 50%;
     width:50px;
     height: 50px;
@@ -1091,8 +1121,8 @@ work Section style
     top:30%;
 }
 .main_product .carousel-control:hover{
-    background-color: #00a885;
-    color:#fff;
+    background-color: var(--primary-color);
+    color:var(--white);
 }
 .main_product .carousel-control.left{
     left:-1.4%;
@@ -1127,8 +1157,8 @@ work Section style
     height: 40px;
     line-height: 40px;
     margin: 0 auto;
-    color:#fff;
-    border:1px solid #fff;
+    color:var(--white);
+    border:1px solid var(--white);
     border-radius: 50%;
     display: inline-block;
     font-size:2rem;
@@ -1157,12 +1187,12 @@ work Section style
     border:1px solid transparent;
 }
 .test_item:hover{
-    border:1px solid #ddd;
-    background-color: #fff;
+    border:1px solid var(--white);
+    background-color: var(--white);
 }
 .test_item:hover .item_img i{
-    color:#fff;
-    background-color: #00a885;
+    color:var(--white);
+    background-color: var(--primary-color);
 }
 
 .main_test .item_img{
@@ -1179,7 +1209,7 @@ work Section style
     position: relative;
 }
 .item_img i{
-    background-color: #fff;
+    background-color: var(--white);
     position: absolute;
     right: -25%;
     top: 50%;
@@ -1187,9 +1217,9 @@ work Section style
     height: 50px;
     line-height: 50px;
     text-align: center;
-    color: #ddd;
+    color: var(--white);
     border-radius: 50%;
-    box-shadow: 1px 0px 0px 0px #ddd;
+    box-shadow: 1px 0px 0px 0px var(--white);
 }
 
 /*Brand Section
@@ -1212,8 +1242,8 @@ work Section style
 =========================*/
 
 .action_btn .btn-default:hover{
-    background-color: #fff;
-    color:#00a885;
+    background-color: var(--white);
+    color:var(--primary-color);
 }
 .action-lage{
     position: relative;
@@ -1227,7 +1257,7 @@ work Section style
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 20px solid #00a885;
+    border-top: 20px solid var(--primary-color);
     left:50%;
     top:0%;
     z-index: 3;
@@ -1249,7 +1279,7 @@ Contact CSS
     font-size: 17px;
     font-weight: 500;
     margin-bottom: 5px;
-    color: #00a885;
+    color: var(--primary-color);
 }
 
 .contact-us .title h3 {
@@ -1260,7 +1290,7 @@ Contact CSS
 
 .contact-us .single-head {
     padding: 50px;
-    box-shadow: 0px 0px 15px #0000001a;
+    box-shadow: 0px 0px 15px var(--black)0001a;
     height: 100%;
 }
 
@@ -1270,7 +1300,7 @@ Contact CSS
 }
 
 .contact-us .single-info i {
-    color: #fff;
+    color: var(--white);
     font-size: 18px;
     display: inline-block;
     margin-bottom: 15px;
@@ -1280,7 +1310,7 @@ Contact CSS
     text-align: center;
     border-radius: 3px;
     line-height: 40px;
-    background: #00a885;
+    background: var(--primary-color);
 }
 
 .contact-us .single-info ul .contact-us .single-info ul li {
@@ -1293,22 +1323,21 @@ Contact CSS
 
 .contact-us .single-info ul li a {
     font-weight: 400;
-
 }
 
 .contact-us .single-info ul li a:hover {
-    color: #00a885;
+    color: var(--primary-color);
 }
 
 .contact-us .single-info .title {
     margin-bottom: 10px;
     font-weight: 500;
-    color: #333;
+    color: var(--darkgray);
     font-size: 18px;
 }
 
 .contact-us .form-main {
-    box-shadow: 0px 0px 15px #0000001a;
+    box-shadow: 0px 0px 15px var(--black)0001a;
     padding: 50px;
 }
 
@@ -1316,9 +1345,9 @@ Contact CSS
     height: 48px;
     line-height: 48px;
     width: 100%;
-    border: 1px solid #e6e2f5;
+    border: 1px solid var(--white);
     padding: 0px 20px;
-    color: #333;
+    color: var(--darkgray);
     border-radius: 0px;
     font-weight: 400;
 }
@@ -1326,21 +1355,21 @@ Contact CSS
 .contact-us .form .form-group textarea {
     height: 180px;
     width: 100%;
-    border: 1px solid #e6e2f5;
+    border: 1px solid var(--white);
     padding: 15px 20px;
-    color: #333;
+    color: var(--darkgray);
     border-radius: 0px;
     resize: none;
     font-weight: 400;
 }
 
 .contact-us .form .form-group label {
-    color: #333;
+    color: var(--darkgray);
     position: relative;
 }
 
 .contact-us .form .form-group label span {
-    color: #ff2c18;
+    color: var(--primary-color);
     display: inline-block;
     position: absolute;
     right: -12px;
@@ -1362,8 +1391,8 @@ Contact CSS
     position: relative;
     font-weight: 500;
     font-size: 14px;
-    color: #fff;
-    background: #333;
+    color: var(--white);
+    background: var(--darkgray);
     display: inline-block;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -1376,8 +1405,8 @@ Contact CSS
 }
 
 .btn:hover {
-    color: #fff;
-    background: #00a885;
+    color: var(--white);
+    background: var(--primary-color);
 }
 
 /*======================================
@@ -1390,7 +1419,7 @@ End Contact CSS
 .divider{
     width:100%;
     height: 1px;
-    background-color: #434769;
+    background-color: var(--darkgray);
     display: inline-block;
 }
 .widget_ab_item_text h6{
@@ -1400,37 +1429,37 @@ End Contact CSS
     font-weight: 700;
 }
 .widget_item .btn:hover{
-    background-color: #0ec9a2;
+    background-color: var(--primary-color);
 }
 .widget_item li a{
-    color:#aaa;
+    color:var(--gray);
 }
 .widget_item li a:hover{
-    color:#fff;
+    color:var(--white);
 }
 
 .widget_latst_item_text p{
     margin-bottom: 0px;
-    color:#aaaaaa;
+    color:var(--gray);
 }
 .widget_service li i,
 .widget_latst_item_text a{
     font-size:12px;
-    color:#aaaaaa;
+    color:var(--gray);
 }
 .widget_service li i{
     margin-right: 5px;
 }
 .widget_service li{
     font-size:13px;
-    border-bottom: 1px dashed #aaa;
+    border-bottom: 1px dashed var(--gray);
     padding-bottom: 10px;
 }
 .widget_newsletter li a:hover i,
 .widget_latst_item_text:hover p,
 .widget_service li:hover,
 .widget_service li:hover i{
-    color:#fff;
+    color:var(--white);
 }
 
 .widget_ab_item .item_icon,
@@ -1461,16 +1490,16 @@ End Contact CSS
 .widget_newsletter .form-control{
     width:80%;
     height: 40px;
-    background-color: #1a1a1a;
-    border-color:#333333;
+    background-color: var(--black);
+    border-color:var(--darkgray);
     display: inline-block;
 }
 .widget_newsletter .btn{
     width: 20%;
     padding: 0.65rem 1.2rem;
-    background-color: #00a885;
-    border-color:#00a885;
-    color:#fff;
+    background-color: var(--primary-color);
+    border-color:var(--primary-color);
+    color:var(--white);
     border-radius: 0;
     margin-left:-4px;
     display: inline-block;
@@ -1478,19 +1507,132 @@ End Contact CSS
 .widget_brand a{
     font-size:30px;
     font-weight: 800;
-    color:#aaa;
+    color:var(--gray);
 }
 .widget_newsletter li a i{
-    color:#aaa;
+    color:var(--gray);
 }
 
 
 .main_footer i {
     padding: 0px 5px;
-    color: #ff0000;
+    color: var(--primary-color);
 }
 
 .main_footer a {
-    color: #ddd;
+    color: var(--white);
     padding: 5px;
 }
+
+
+
+/* Contact Success Page CSS */
+        #error-page {
+            position: absolute;
+            top: 10%;
+            left: 15%;
+            right: 15%;
+            bottom: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--white);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #error-page .content {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .content h2.header {
+            font-size: 14vw;
+            line-height: 1.2em;
+            position: relative;
+        }
+
+        .content h2.header:after {
+            position: absolute;
+            content: attr(data-text);
+            top: 0;
+            left: 0;
+            right: 0;
+            background: -webkit-repeating-linear-gradient(-45deg, #23a539, #1bad1b, #2e8d3e, #34bd4b, #22b63b, #57c04d, #37cf37);
+            background-size: 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+            animation: animate 10s ease-in-out infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 0;
+            }
+
+            25% {
+                background-position: 100% 0;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            75% {
+                background-position: 0% 100%;
+            }
+
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        .content h4 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: var(--black);
+            font-size: 2em;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .content h4:after {
+            position: absolute;
+            content: attr(data-text);
+            top: 0;
+            left: 0;
+            right: 0;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.473);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            color: var(--black);
+        }
+
+        .content .btns {
+            margin: 25px 0;
+            display: inline-flex;
+        }
+
+        .content .btns a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            font-weight: 500;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .content .btns a:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+/* End COntact Success Page CSS */
