@@ -34,8 +34,8 @@ Author URI: http://xpeedstudio.com
    :root {
 	/* --primary-color: #00a885;
 	--secondary-color: #13A0B2; */
-    --primary-color: #2EA043;
-    --secondary-color: #2EA043; 
+    --primary-color: #214192;
+    --secondary-color: #214192; 
     --black: #000;
 	--white: #fff;
 	--gray: #757575;
@@ -872,7 +872,9 @@ Nav Menu style
     display: block;
     width: 80%;
 }
-
+.navbar-top{
+    background-color: lightblue;
+}
 .navbar-callus li a{
     font-size:14px;
     padding: 10px;
@@ -1557,7 +1559,7 @@ End Contact CSS
             top: 0;
             left: 0;
             right: 0;
-            background: -webkit-repeating-linear-gradient(-45deg, #23a539, #1bad1b, #2e8d3e, #34bd4b, #22b63b, #57c04d, #37cf37);
+            background: -webkit-repeating-linear-gradient(-45deg, #239ca5, #1b8bad, #2e628d, #346bbd, #22a5b6, #4db8c0, #375bcf);
             background-size: 400%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
