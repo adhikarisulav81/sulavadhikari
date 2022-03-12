@@ -1,13 +1,3 @@
-/* ==============================================================
-
-Template name : Bootsnav - Multi Purpose Header
-Categorie : Bootstrap Menu in CSS
-Author : adamnurdin01
-Version : v.1.1
-Created : 2016-06-02
-Last update : 2016-06-11
-
-============================================================== */
 
 /* MEGAMENU STYLE
 =================================*/
@@ -993,7 +983,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     /* Navbar Responsive
     =================================*/ 
     nav.navbar.bootsnav .navbar-brand    {
-        display: inline-block;
+        display: none;
         float: none !important;
         margin: 0 !important;
     }
