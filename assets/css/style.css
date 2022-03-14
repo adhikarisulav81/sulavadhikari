@@ -28,7 +28,7 @@
 	/* --primary-color: #00a885;
 	--secondary-color: #13A0B2; */
     --primary-color: #214192;
-    --secondary-color: #214192; 
+    --secondary-color: lightblue; 
     --black: #000;
 	--white: #fff;
 	--gray: #757575;
@@ -1632,4 +1632,27 @@ End Contact CSS
             background: var(--primary-color);
             color: var(--white);
         }
-/* End COntact Success Page CSS */
+/* End Contact Success Page CSS */
+
+/* Start Attached Social Media */
+#socialbutton {
+    top: 300px;
+    height: 170px;
+    width: 35px;
+    position: fixed;
+    right: 4px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+
+#socialbutton a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+#socialbutton a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+/* End Attached Social Media */
