@@ -869,6 +869,11 @@ Nav Menu style
     color:var(--white);
 }
 
+.navbar-socail .clock:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
 @media (max-width: 993px) {
     .navbar-socail li{
         display: none;
@@ -1642,3 +1647,33 @@ End Contact CSS
     text-decoration: none;
 }
 /* End Attached Social Media */
+
+
+
+                                    .home-btn,
+                                    .all-blog-btn {
+                                        position: relative;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        color: var(--white);
+                                        background: var(--darkgray);
+                                        display: inline-block;
+                                        -webkit-transition: all 0.4s ease;
+                                        -moz-transition: all 0.4s ease;
+                                        transition: all 0.4s ease;
+                                        z-index: 5;
+                                        display: inline-block;
+                                        padding: 12px 38px;
+                                        border-radius: 0px;
+                                    }
+
+                                    .all-blog-btn:hover {
+                                        color: var(--white);
+                                        background: var(--primary-color);
+                                    }
+                    
+/* Marquee */
+                                    .skill-title h2 {
+                                        font-size: 36px;
+                                        font-weight: 800;
+                                    }
