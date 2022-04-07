@@ -1638,9 +1638,11 @@ End Contact CSS
 #socialbutton a {
     color: var(--white);
     text-decoration: none;
+    transition: all .5s ease-in-out;
 }
 #socialbutton i:hover {
-    transform: translateX(-50%);
+    
+    transform: scale(1.4) rotate(-15deg);
 }
 #socialbutton a:hover {
     color: var(--secondary-color);
